@@ -1,0 +1,23 @@
+<% include ../partials/header %>
+
+<div class="container">
+    <div class="row">
+        <h1 style="text-align: center">Leave <%= view.name %> a Message</h1>
+        <div style="width: 30%; margin: 30px auto">
+            <form action="/life/<%= view._id %>/comments" method="POST">
+                <!--<div class="form-group">-->
+                <!--    <input class="form-control" type="text" name="message[author]" placeholder="Your Name"></input>-->
+                <!--</div>-->
+                <div class="form-group">
+                    <input class="form-control" type="text" name="message[content]" placeholder="Write here"></input>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary btn-lg btn-block">Go!</button>
+                </div>
+            </form>
+            <a href="/life">Back to homepage</a>
+        </div>
+    </div>
+</div>
+
+<% include ../partials/footer %>

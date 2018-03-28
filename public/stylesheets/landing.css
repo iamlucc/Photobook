@@ -1,0 +1,95 @@
+body {
+  background-color: #555;
+}
+
+#landing-header {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  padding-top: 40vh;
+}
+
+.footer_text {
+    z-index: 1;
+    color: #fff;
+    position: relative;
+    text-align: center;
+    padding-top: 40vh;
+}
+
+#landing-header h1 {
+  color: #fff;
+}
+
+.slideshow { 
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slideshow li { 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 0;
+  animation: landingImage 50s linear infinite; 
+}
+
+/*image*/
+.slideshow li:nth-child(1) { 
+  background-image: url(https://images.unsplash.com/photo-1470004914212-05527e49370b?ixlib=rb-0.3.5&s=60790f355a04a4bf1a2c79e18a07137b&auto=format&fit=crop&w=1526&q=80) 
+}
+
+.slideshow li:nth-child(2) { 
+  background-image: url(https://images.unsplash.com/photo-1503505344463-859206198e4b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=12aff2dab34a18b1ab0834639a80be50&auto=format&fit=crop&w=1050&q=80);
+  animation-delay: 10s; 
+}
+
+.slideshow li:nth-child(3) { 
+  background-image: url(https://images.unsplash.com/photo-1514994894255-c44a4939512c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b5e2372cdd6417965ea9b3cbb1a84a40&auto=format&fit=crop&w=1490&q=80);
+  animation-delay: 20s; 
+}
+
+.slideshow li:nth-child(4) { 
+  background-image: url(https://images.unsplash.com/photo-1512972589374-1147fd33003b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=354a2017b2c835e10a064f291f8b9688&auto=format&fit=crop&w=1533&q=80);
+  animation-delay: 30s; 
+}
+
+.slideshow li:nth-child(5) { 
+  background-image: url(https://images.unsplash.com/photo-1521337230981-ca3fafed777f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7a38e1ca955d6f68cf00d4a8a6ceabb0&auto=format&fit=crop&w=1053&q=80);
+  animation-delay: 40s; 
+}
+
+@keyframes landingImage { 
+  0% { 
+    opacity: 0; 
+    animation-timing-function: ease-in;
+  }
+  10% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    opacity: 1
+  }
+  30% {
+    opacity: 0
+  }
+}
+
+/*support*/
+.no-cssanimations .slideshow li {
+	opacity: 1;
+}

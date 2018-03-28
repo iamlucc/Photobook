@@ -1,0 +1,30 @@
+body {
+    padding-top: 70px
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.thumbnail .caption {
+    padding: 10px;
+}
+
+.deleteForm {
+    display: inline;
+}
+
+.authorName {
+    text-align: right;
+}
+
+.footer_text {
+    position: relative;
+    text-align: center;
+    padding-top: 20vh;
+}
+
